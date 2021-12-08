@@ -13,13 +13,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private float lookSpeed = 0.5f;
 
-
     private Vector3 movementDirection;
     private Vector3 headRotation;
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody>();
+    }
 
     private void Update()
     {
-        transform.Translate(movementDirection * Time.deltaTime * speed);
+        //transform.Translate(movementDirection * Time.deltaTime * speed);
+        //rb.velocity = movementDirection * speed;
+        //rb.AddForce(movementDirection * speed);
+        rb.MovePosition(transform.position + transform.rotation * movementDirection * Time.deltaTime * speed);
     }
 
     private void OnEnable()
