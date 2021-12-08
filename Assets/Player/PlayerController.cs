@@ -1,0 +1,64 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class PlayerController : MonoBehaviour
+{
+    [SerializeField]
+    private float speed = 1f;
+
+    [SerializeField]
+    private Transform head;
+
+    [SerializeField]
+    private float lookSpeed = 0.5f;
+
+    private Vector3 movementDirection;
+    private Vector3 headRotation;
+    private Rigidbody rb;
+
+    void Start()
+    {
+        rb = gameObject.GetComponent<Rigidbody>();
+    }
+
+    private void Update()
+    {
+        //transform.Translate(movementDirection * Time.deltaTime * speed);
+        //rb.velocity = movementDirection * speed;
+        //rb.AddForce(movementDirection * speed);
+        rb.MovePosition(transform.position + transform.rotation * movementDirection * Time.deltaTime * speed);
+    }
+
+    private void OnEnable()
+    {
+        movementDirection = Vector3.zero;
+        headRotation = Vector3.zero;
+        head.localRotation = Quaternion.Euler(headRotation);
+    }
+    private void OnShoot(InputValue inputValue)
+    {
+
+    }
+
+    private void OnLook(InputValue inputValue)
+    {
+        Vector2 value = inputValue.Get<Vector2>();
+        if (value.x != 0)
+        {
+            transform.Rotate(0, value.x * lookSpeed, 0);
+        }
+        if (value.y != 0)
+        {
+            headRotation.x -= value.y * lookSpeed;
+            headRotation.x = Mathf.Clamp(headRotation.x, -90, 90);
+            head.localRotation = Quaternion.Euler(headRotation);
+        }
+    }
+
+    private void OnMove(InputValue inputValue)
+    {
+        Vector2 value = inputValue.Get<Vector2>();
+        movementDirection = new Vector3(value.x, 0, value.y);
+    }
+}
