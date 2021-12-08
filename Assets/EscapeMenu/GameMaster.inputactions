@@ -1,0 +1,50 @@
+{
+    "name": "GameMaster",
+    "maps": [
+        {
+            "name": "GameControllers",
+            "id": "45c72ed0-3a5d-4836-996e-6c5ee0a11d43",
+            "actions": [
+                {
+                    "name": "Escape",
+                    "type": "Button",
+                    "id": "27d14708-3a63-4fec-b2ac-6e0ec6022c39",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "6e9a1f8d-febb-446d-8643-a34165723615",
+                    "path": "<Keyboard>/escape",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Escape",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": [
+        {
+            "name": "KeyboardAndMouse",
+            "bindingGroup": "KeyboardAndMouse",
+            "devices": [
+                {
+                    "devicePath": "<Keyboard>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Mouse>",
+                    "isOptional": false,
+                    "isOR": false
+                }
+            ]
+        }
+    ]
+}
