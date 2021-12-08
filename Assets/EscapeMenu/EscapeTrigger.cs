@@ -7,7 +7,7 @@ public class EscapeTrigger : MonoBehaviour
     [SerializeField]
     private GameObject canvas;
 
-    private void OnEscape()
+    public void OnEscape()
     {
         // TODO: call game pause
         // TODO: need to unlock mouse because it is hidden by PlayerController system
