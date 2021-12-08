@@ -376,8 +376,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ZAGRAJ!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 62763f149edb42874b9244b0c9bdbfb7, type: 2}
+  m_sharedMaterial: {fileID: -3711330793220797349, guid: 62763f149edb42874b9244b0c9bdbfb7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -764,8 +764,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: OPCJE
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 62763f149edb42874b9244b0c9bdbfb7, type: 2}
+  m_sharedMaterial: {fileID: -3711330793220797349, guid: 62763f149edb42874b9244b0c9bdbfb7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -949,8 +949,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "WYJ\u015ACIE Z GRY"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 62763f149edb42874b9244b0c9bdbfb7, type: 2}
+  m_sharedMaterial: {fileID: -3711330793220797349, guid: 62763f149edb42874b9244b0c9bdbfb7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
